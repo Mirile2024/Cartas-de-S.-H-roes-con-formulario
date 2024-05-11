@@ -1,9 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 :root {
     --cl-green: #1cd1b0;
     --cl-ski-blue: #00669F;
@@ -11,7 +5,14 @@
     --cl-white: #FFFFFF;
     --cl-blue: #001D2D;
 
+}
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* -----------seccion header------------- */
@@ -21,14 +22,21 @@ footer {
     color: #F3F3F3;
 }
 
+body {
+    max-width: 1440px;
+    margin-inline: auto;
+
+}
+
 .banner {
     max-width: 1440px;
     margin-inline: auto;
 }
 
 div h1 {
+    max-width: 1440px;
+    margin-inline: auto;
     font-size: 30px;
-    height: 80px;
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
@@ -57,11 +65,14 @@ header img {
 nav {
     background-color: var(--cl-blue);
     max-width: 1440px;
+    display: flex;
     margin-inline: auto;
-    padding-block: 10px;
 
 }
-.nav{
+
+.nav {
+    max-width: 1440px;
+    margin-inline: auto;
     margin-right: 20px;
 }
 
@@ -117,7 +128,6 @@ article>div {
     position: relative;
     top: -71px;
     background-color: #F3F3F3;
-    padding-bottom: 20px;
 }
 
 article {
@@ -128,6 +138,8 @@ article {
 /* ------------seccion main---------- */
 
 .cartas {
+    max-width: 1440px;
+    margin-inline: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -142,7 +154,6 @@ p {
 .button1 {
     max-width: 1440px;
     margin-inline: auto;
-
     width: 129px;
     height: 48.5px;
     border: 0px;
@@ -191,18 +202,44 @@ footer {
 
 }
 
-main {
-    max-width: 1440px;
-    margin-inline: auto;
-    display: lex;
-    align-items: center;
-}
 
 /* ----------index2.html----------------- */
+
 .añadir {
-    max-width: 1440px;
+    max-width: 954px;
     margin-inline: auto;
+display:flex;
     opacity: 0px;
     border-radius: 49.9px;
     background-color: #00669F;
+}
+
+label, legend,
+.titulo2 {
+    color: var(--cl-white);
+    text-align: center;
+}
+
+.superh {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.biografia {
+    max-width: 954px;
+    margin-inline: auto;
+
+}
+
+#biografia {
+    max-height: 307px;
+    margin-inline: auto;
+}
+.cargar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }

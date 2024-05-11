@@ -5,30 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Cartas de S. Heroes con formulario</title>
+    <title>Añadir</title>
 </head>
 
 <body>
-    <header>        <!-- -----------ingreo cambios------ -->
-        <div class="descuento">20% de descuento en todos los productos!</div>
-        <div class="nombre">
-            <img src="img/logo 1.svg" alt="">
-            <h1>Nombre Tienda</h1>
-        </div>
-        <nav>
-            <ul class="ul-nav">
-                <li class="li-nav">Contacto</li>
-                <li class="li-nav">Registrarme</li>
-                <li class="li-nav">Ingresar</li>
-            </ul>
-        </nav>
+    <header>
+        <section class="banner">
+            <div class="descuento">20% de descuento en todos los productos!</div>
+            <div class="nombre">
+                <img src="img/logo 1.svg" alt="">
+                <h1 class="tienda">Nombre Tienda</h1>
+            </div>
+
+            <!-- -secciojn nav------------ -->
+            <nav>
+                <div class="nav">
+                    <ul>
+                        <a href="#">
+                            <li class="item-nav">Contacto</li>
+                        </a><a href="#">
+                            <li class="item-nav">Registrarme</li>
+                        </a><a href="#">
+                            <li class="item-nav">Ingresar</li>
+                        </a>
+                    </ul>
+                </div> >
+
+            </nav>
     </header>
-    <main>
-        <section class="añadir">
-<div></div>
-<div></div>
-        </main>
-        <footer>Todos los derechos reservados a FRONT END </footer>
-    </body>
-    
-    </html>
+    <!-- ---------------formulario añadir----------- -->
+    <main class="añadir">
+        <!-- <section class="titulo añadir"> -->
+            <div class="titulo2">
+                <p>Añadí tu super!</p>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+            </div>
+        </section>
+        <section class="superh">
+
+            <div class="nombre">
+                <label for="nombre">*Nombre</label>
+                <input type="text" name="nombre" id="nombre" title="Nombre" required>
+            </div>
+            <div class="date">
+                <label for="date">Fecha</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="biografia">
+                <label for="biografia">Biografia</label>
+                <textarea name="biografia" id="biografia">Biografia</textarea>
+            </div>
+        </section>
+        <section class="cargar">
+            <div class="especie">
+                <label for="job">Especie</label>
+                <select name="job" id="job">
+                  <option value="none" selected disabled>Elija una opcion</option>
+                  <optgroup label="Humana">
+
+                  </optgroup>
+                      </div>
+            <div class="foto">
+                <label for="avatar">Foto de Perfi</label>
+                <input type="file" name="archivo" id="avatar" accept=".jpg">
+            </div>
+            <legend class="poderes">Poderes</legend>
+            <label for="volar">Volar</label>
+            <input type="checkbox" name="poderes" id="volar"> 
+            <label for="fuerza">Fuerza Extrema</label>
+            <input type="checkbox" name="poderes" id="fuerza">
+            <label for="elasticidad">Elasticidad</label>
+            <input type="checkbox" name="poderes" id="elasticidad">
+            <label for="velocidad">Velocidad</label>
+            <input type="checkbox" name="poderes" id="velocidad">
+            <label for="invisivilidad">nvisivilidad</label>
+            <input type="checkbox" name="poderes" id="invisivilidad">
+            <label for="cambiar de forma">Cambiar de Forma</label>
+            <input type="checkbox" name="poderes" id="cambiar de forma">
+
+            <div>
+                <legend class="personajes">Tipos de Personajes</legend>
+
+                <label for="personajes">Heroe/Heroina</label>
+                <input type="radio" id="" name="">                                                                                                                                                        
+                <label for="personajes">Villano/Villana</label>
+                <input type="radio" id="" name="">
+
+            </div>
+        </section>
+    </main>
+    <footer>Todos los derechos reservados a FRONT END </footer>
+</body>
+
+</html>
