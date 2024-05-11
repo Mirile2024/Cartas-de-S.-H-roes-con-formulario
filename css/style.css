@@ -39,14 +39,10 @@ div h1 {
 .descuento {
     background-color: var(--cl-green);
     color: var(#000000);
-    /* height: 23px;
     padding-left: 10px;
-    line-height: 23px; */
 }
 
 header img {
-    /* width: 99px;
-    height: 74px; */
     margin-left: 10px;
 
 }
@@ -54,7 +50,7 @@ header img {
 .nombre {
     display: flex;
     background-color: var(--cl-ski-blue);
-
+    color: var(--cl-white);
 }
 
 /* --------------seccion nav--------- */
@@ -62,8 +58,11 @@ nav {
     background-color: var(--cl-blue);
     max-width: 1440px;
     margin-inline: auto;
-    padding-block: 1rem;
+    padding-block: 10px;
 
+}
+.nav{
+    margin-right: 20px;
 }
 
 
@@ -164,9 +163,9 @@ p {
 }
 
 .btn {
+    display: inline;
     justify-content: center;
-    display: flex;
-    align-items: center;
+    align-content: center;
 }
 
 .btnmas {
@@ -195,8 +194,8 @@ footer {
 main {
     max-width: 1440px;
     margin-inline: auto;
-    /* display:flex; */
-    /* align-items: center; */
+    display: lex;
+    align-items: center;
 }
 
 /* ----------index2.html----------------- */
@@ -206,5 +205,4 @@ main {
     opacity: 0px;
     border-radius: 49.9px;
     background-color: #00669F;
-    /* align-items: center; */
 }
