@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> -->
     <title>Añadir</title>
 </head>
 
@@ -33,67 +37,76 @@
 
             </nav>
     </header>
-    <!-- ---------------formulario añadir----------- -->
-    <main class="añadir">
-        <!-- <section class="titulo añadir"> -->
-            <div class="titulo2">
-                <p>Añadí tu super!</p>
-                <p>Agregá tu personaje favorito completando las opciones.</p>
-            </div>
-        </section>
-        <section class="superh">
+    <main class="padre-añadir">
+        <!-- -------------formulario añadir---------------- -->
+        <div class="header-añadir">
+            <div class="contenedor-añadir">
 
-            <div class="nombre">
-                <label for="nombre">*Nombre</label>
-                <input type="text" name="nombre" id="nombre" title="Nombre" required>
-            </div>
-            <div class="date">
-                <label for="date">Fecha</label>
-                <input type="date" name="date" id="date">
-            </div>
-            <div class="biografia">
-                <label for="biografia">Biografia</label>
-                <textarea name="biografia" id="biografia">Biografia</textarea>
-            </div>
-        </section>
-        <section class="cargar">
-            <div class="especie">
-                <label for="job">Especie</label>
-                <select name="job" id="job">
-                  <option value="none" selected disabled>Elija una opcion</option>
-                  <optgroup label="Humana">
+                <div class="header-titulo">
+                    <p class="añadir-superheroe">Añadí tu super!</p>
+                    <p class="agregar-personaje">Agregá tu personaje favorito completando las opciones.</p>
+                </div>
+                <div class="body-añadir">
+                    <div class="añadir1">
+                        <div class="nombre">
+                        <label for="nombre">*Nombre</label>
+                        <input type="text" name="nombre" id="nombre" title="Nombre" required>
+                    </div>
+                    <div class="date">
+                        <label for="date">Fecha</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="biografia">
+                        <label for="biografia">Biografia</label>
+                        <textarea name="biografia" id="biografia">Biografia</textarea>
+                    </div>
+                    </div>
+                    <div class="añadir2">
+                        <!-- <div class="especie-i">
+                            <label for="job">Especie</label>
+                            <select name="job" id="job">
+                                <option value="none" selected disabled>Elija una opcion</option>
+                                <option value="aliens">Aliens</option>
+                                <option value="Humana">Humana</option>
+                                <option value="humanoide">Humanoide</option>
+                                </optgroup>
+                                <div class="foto-i"> -->
+                        <!-- -agregar en la carpeta img, imagenes pára cargar---------- -->
+                        <!-- <label for="avatar">Foto de Perfi</label>
+                                    <input type="file" name="archivo" id="avatar" accept=".jpg">
+                                </div>
+                                <div class="checkbox-i">
+                                    <legend class="poderes">Poderes</legend>
+                                    <label for="volar"></label>
+                                    <input type="checkbox" name="poderes" id="volar">Volar
+                                    <label for="elasticidad"></label>
+                                    <input type="checkbox" name="poderes" id="elasticidad">Elasticidad
+                                    <label for="velocidad"></label>
+                                    <input type="checkbox" name="poderes" id="velocidad">Velocidad
+                                    <label for="cambiar de forma"></label>
+                                    <input type="checkbox" name="poderes" id="cambiar de forma">Cambiar de Forma
+                                </div>
+                                <div class="type-i">
+                                    <legend class="personajes">Tipos de Personajes</legend>
+                                    <label for="personajes">Heroe/Heroina</label>
+                                    <input type="radio" id="" name="">
+                                    <label for="personajes">Villano/Villana</label>
+                                    <input type="radio" id="" name="">
 
-                  </optgroup>
-                      </div>
-            <div class="foto">
-                <label for="avatar">Foto de Perfi</label>
-                <input type="file" name="archivo" id="avatar" accept=".jpg">
-            </div>
-            <legend class="poderes">Poderes</legend>
-            <label for="volar">Volar</label>
-            <input type="checkbox" name="poderes" id="volar"> 
-            <label for="fuerza">Fuerza Extrema</label>
-            <input type="checkbox" name="poderes" id="fuerza">
-            <label for="elasticidad">Elasticidad</label>
-            <input type="checkbox" name="poderes" id="elasticidad">
-            <label for="velocidad">Velocidad</label>
-            <input type="checkbox" name="poderes" id="velocidad">
-            <label for="invisivilidad">nvisivilidad</label>
-            <input type="checkbox" name="poderes" id="invisivilidad">
-            <label for="cambiar de forma">Cambiar de Forma</label>
-            <input type="checkbox" name="poderes" id="cambiar de forma">
+                                </div>
+ -->
+                        <!-- </div> -->
+                    </div>
 
-            <div>
-                <legend class="personajes">Tipos de Personajes</legend>
-
-                <label for="personajes">Heroe/Heroina</label>
-                <input type="radio" id="" name="">                                                                                                                                                        
-                <label for="personajes">Villano/Villana</label>
-                <input type="radio" id="" name="">
+                </div>
+                <div class="footer-añadir">
+                    <button class="btn_footer" type="submit">Añadir</button>
+                </div>
 
             </div>
-        </section>
+        </div>
     </main>
+
     <footer>Todos los derechos reservados a FRONT END </footer>
 </body>
 

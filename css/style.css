@@ -169,7 +169,6 @@ p {
     font-size: 62px;
     border-radius: 50px;
     border-style: none;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -183,12 +182,22 @@ p {
     justify-content: center;
     display: inline;
     padding: 2%;
-
+/* position: relative; */
 }
 
 .botonmas {
     display: flex;
     justify-content: center;
+        /* position: absolute; */
+    width: 82px;
+    height: 82px;
+    font-size: 62px;
+    font-weight: bold;
+    border-radius: 50px;
+    border-style: none;
+    align-items: center;
+    background-color: var(--cl-ski-blue);
+    color: #F3F3F3;
 
 }
 
@@ -204,42 +213,91 @@ footer {
 
 
 /* ----------index2.html----------------- */
-
-.añadir {
-    max-width: 954px;
-    margin-inline: auto;
-display:flex;
-    opacity: 0px;
-    border-radius: 49.9px;
-    background-color: #00669F;
+.padre-añadir{
+    display: flex;
+    justify-content: center;
 }
-
-label, legend,
-.titulo2 {
+.header-añadir{
+    background-color:var(--cl-ski-blue);
     color: var(--cl-white);
-    text-align: center;
-}
-
-.superh {
+    max-width: 59.625rem;
+    /* height: 53.25rem; */
+    border-radius: 3.12rem;
+    justify-content: center;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+   border-style: dashed;
+    
 }
-
-.biografia {
-    max-width: 954px;
-    margin-inline: auto;
-
+.añadir-superheroe{
+    font-size: 2.5rem;
+    font: bold;  
 }
-
-#biografia {
-    max-height: 307px;
-    margin-inline: auto;
+.agregar-personaje{
+    font-size: 1.25rem;
+    font-family: 'Inter',sans-serif;
 }
-.cargar{
+.header-titulo{
+    border-style: dashed;
+    border-color: #000000;
+}
+.body-añadir{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    align-content: center;
+}
+.añadir1{
+    background-color: #2e4f63;
+    width: 400px;
+    /* border-radius: 0.96rem; */
+    border-style: dashed;
+    border-color:#CC2424;
+    height: 400px;
+
+
+}
+.añadir2{
+    background-color: #CC2424;
+    width: 400px;
+    height: 400px;
+    border-style: dashed;
+    border-color: violet;
+
+
+}
+/* .footer-añadir{
+    background-color: #001D2D;
+    border-style: dashed;
+    border-color: pink;
+
+} */
+.body-añadir{
+    display: flex;
+    flex-direction: row;
+    border-style: dashed;
+    border-color: green;
+
+
+}
+.btn_footer{
+    width: 29.25rem;
+    height: 5.43rem;
+    border-radius: 1.44rem;
+    background-color: #1CD1B0;
+    font-size:2.5rem ;
+    color: #000000;
+    font-family: 'Inter',sans-serif;
+    line-height: 2.74rem;
+    font-weight: 700;
+}
+.footer-añadir{
+    display: flex;
+    justify-content: center;
+}
+/* ---------------media qwery---------------- */
+@media (max-width:390px){
+    .body-añadir{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
