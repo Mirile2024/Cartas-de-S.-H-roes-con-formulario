@@ -213,23 +213,29 @@ footer {
 
 
 /* ----------index2.html----------------- */
+.html2{
+    max-width: 1440px;
+
+}
 .padre-añadir{
     display: flex;
     justify-content: center;
+    align-items: center;
+
 }
-.header-añadir{
+ .contenedor-añadir{
     background-color:var(--cl-ski-blue);
     color: var(--cl-white);
-    max-width: 59.625rem;
-    /* height: 53.25rem; */
-    border-radius: 3.12rem;
+    max-width: 59.625rem; 
     justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-   border-style: dashed;
-    
-}
+    align-items: flex-start;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 3rem;
+
+ }
 .añadir-superheroe{
     font-size: 2.5rem;
     font: bold;  
@@ -239,8 +245,7 @@ footer {
     font-family: 'Inter',sans-serif;
 }
 .header-titulo{
-    border-style: dashed;
-    border-color: #000000;
+    width: 100%;
 }
 .body-añadir{
     display: flex;
@@ -250,34 +255,28 @@ footer {
     background-color: #2e4f63;
     width: 400px;
     /* border-radius: 0.96rem; */
-    border-style: dashed;
-    border-color:#CC2424;
     height: 400px;
-
-
 }
+
 .añadir2{
     background-color: #CC2424;
     width: 400px;
     height: 400px;
-    border-style: dashed;
-    border-color: violet;
 
 
 }
-/* .footer-añadir{
-    background-color: #001D2D;
-    border-style: dashed;
-    border-color: pink;
-
-} */
 .body-añadir{
     display: flex;
     flex-direction: row;
-    border-style: dashed;
-    border-color: green;
-
-
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.footer-añadir{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    justify-content: center;
 }
 .btn_footer{
     width: 29.25rem;
@@ -289,11 +288,12 @@ footer {
     font-family: 'Inter',sans-serif;
     line-height: 2.74rem;
     font-weight: 700;
+    border-style: none;
 }
-.footer-añadir{
+/* .footer-añadir{
     display: flex;
     justify-content: center;
-}
+} */
 /* ---------------media qwery---------------- */
 @media (max-width:390px){
     .body-añadir{
