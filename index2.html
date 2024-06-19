@@ -39,70 +39,73 @@
     </header>
     <main class="padre-añadir">
         <!-- -------------formulario añadir---------------- -->
-            <div class="contenedor-añadir">
+        <div class="contenedor-añadir">
 
-                <div class="header-titulo">
-                    <p class="añadir-superheroe">Añadí tu super!</p>
-                    <p class="agregar-personaje">Agregá tu personaje favorito completando las opciones.</p>
-                </div>
-                <div class="body-añadir">
-                    <div class="añadir1">
-                        <div class="nombre">
-                        <label for="nombre">Nombre</label>
+            <div class="header-titulo">
+                <p class="añadir-superheroe">Añadí tu super!</p>
+                <p class="agregar-personaje">Agregá tu personaje favorito completando las opciones.</p>
+            </div>
+
+            <div class="body-añadir">
+                <div class="añadir1">
+                    <div class="div-nombre">
+                        <label for="nombre">*Nombre</label>
                         <input type="text" name="nombre" id="nombre" title="Nombre" required>
                     </div>
-                    <div class="date">
+                    <div class="div-date">
                         <label for="date">Fecha</label>
                         <input type="date" name="date" id="date">
                     </div>
-                    <div class="biografia">
-                        <label for="biografia">Biografia</label>
-                        <textarea name="biografia" id="biografia">Biografia</textarea>
+                    <div class="div-descripcion">
+                        <textarea name="descripcion" id="descripcion">Descripcion</textarea>
                     </div>
-                    </div>
-                    <div class="añadir2">
-                        <!-- <div class="especie-i">
-                            <label for="job">Especie</label>
-                            <select name="job" id="job">
-                                <option value="none" selected disabled>Elija una opcion</option>
-                                <option value="aliens">Aliens</option>
-                                <option value="Humana">Humana</option>
-                                <option value="humanoide">Humanoide</option>
-                                </optgroup>
-                                <div class="foto-i"> -->
-                        <!-- -agregar en la carpeta img, imagenes pára cargar---------- -->
-                        <!-- <label for="avatar">Foto de Perfi</label>
-                                    <input type="file" name="archivo" id="avatar" accept=".jpg">
-                                </div>
-                                <div class="checkbox-i">
-                                    <legend class="poderes">Poderes</legend>
-                                    <label for="volar"></label>
-                                    <input type="checkbox" name="poderes" id="volar">Volar
-                                    <label for="elasticidad"></label>
-                                    <input type="checkbox" name="poderes" id="elasticidad">Elasticidad
-                                    <label for="velocidad"></label>
-                                    <input type="checkbox" name="poderes" id="velocidad">Velocidad
-                                    <label for="cambiar de forma"></label>
-                                    <input type="checkbox" name="poderes" id="cambiar de forma">Cambiar de Forma
-                                </div>
-                                <div class="type-i">
-                                    <legend class="personajes">Tipos de Personajes</legend>
-                                    <label for="personajes">Heroe/Heroina</label>
-                                    <input type="radio" id="" name="">
-                                    <label for="personajes">Villano/Villana</label>
-                                    <input type="radio" id="" name="">
-
-                                </div>
- -->
-                        <!-- </div> -->
-                    </div>
-
-                </div>
-                <div class="footer-añadir">
-                    <button class="btn_footer" type="submit">Añadir</button>
                 </div>
 
+                <div class="añadir2">
+                    <div class="div-especie">
+                        <label for="job">*Especie</label>
+                        <select name="job" id="job">
+                            <option value="none" selected disabled>Elija una opcion</option>
+                            <option value="aliens">Aliens</option>
+                            <option value="Humana">Humana</option>
+                            <option value="humanoide">Humanoide</option>
+                        </select>
+
+                        <div class="div-foto">
+                            <!-- -agregar en la carpeta img, imagenes pára cargar---------- -->
+                            <label for="avatar">Foto de Perfi</label>
+                            <input type="file" name="archivo" id="avatar" accept=".jpg">
+                        </div>
+                        <div class="div-tipos">
+                            <div class="div-checkbox">
+                                <legend class="poderes">Poderes</legend>
+                                <label for="volar"></label>
+                                <input type="checkbox" name="poderes" id="volar">Volar
+                                <label for="elasticidad"></label>
+                                <input type="checkbox" name="poderes" id="elasticidad">Elasticidad
+                                <label for="velocidad"></label>
+                                <input type="checkbox" name="poderes" id="velocidad">Velocidad
+                                <label for="cambiar de forma"></label>
+                                <input type="checkbox" name="poderes" id="cambiar de forma">Cambiar de Forma
+                            </div>
+                            <hr class="linea-tipos">
+                            <div class="div-type">
+                                <legend class="personajes">Tipos de Personajes</legend>
+                                <label for="personajes">Heroe/Heroina</label>
+                                <input type="radio" id="" name="">
+                                <label for="personajes">Villano/Villana</label>
+                                <input type="radio" id="" name="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="footer-añadir">
+                <button class="btn_footer" type="submit">Añadir</button>
+            </div>
+
+        </div>
     </main>
 
     <footer>Todos los derechos reservados a FRONT END </footer>
