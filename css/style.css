@@ -449,6 +449,13 @@ font-size: 1rem;
     .body-añadir{
         flex-direction: column;
         flex-wrap: wrap;
-        margin-inline: 1.5rem;
+        margin-inline: 0.5rem;
+        justify-content: center;
+        align-items: center;
     }
+    .btn_footer{
+       width: 100%;
+       margin-inline: 1.5rem;
+    }
+    
 }
